@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>CNN</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/all.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="container">
+				<div class="header-left">
+					<div class="logo-area">
+						<a href="#">
+							<img src="img/logo_cnn.png" alt="Main-logo">
+						</a>
+					</div>
+					<nav class="main-nav">
+						<ul>
+							<li><a href="#">Region</a></li>
+							<li><a href="#">U.S.Politics</a></li>
+							<li><a href="#">Money</a></li>
+							<input type="checkbox" id="ul-2-switcher" hidden>
+							<label for="ul-2-switcher" class="text-white h4 m-2"><i class="fas fa-caret-down"></i></label>
+							<ul class="ul-2" id="ul-2">
+								<li><a href="#">Entertainment</a></li>
+								<li><a href="#">Tech</a></li>
+								<li><a href="#">Sport</a></li>
+								<li><a href="#">Travel</a></li>
+								<li><a href="#">Style</a></li>
+								<li><a href="#">Health</a></li>
+								<li><a href="#">Video</a></li>
+								<li><a href="#">VR</a></li>
+							</ul>
+						</ul>
+					</nav>
+				</div>
+				
+				
+				<div class="header-right">
+					<div class="international-dropdown">
+						<input type="checkbox" id="international-Switcher" hidden>
+						<label for="international-Switcher">International Edition+</label>
+						<div class="international-area">
+							<ul>
+								<li>U.S.</li>
+								<li>Arabic</li>
+								<li>Español</li>
+							</ul>
+							<hr>
+							<div class="international-bottom">
+								<p>Set edition preference:</p>
+								<ul>
+									<li>
+										<input type="radio" id="us" name="country">
+										<label for="us">U.S.</label>
+									</li>
+									<li>
+										<input type="radio" id="inter" name="country">
+										<label for="inter">International</label>
+									</li>
+								</ul>
+							</div>
+							<button type="button">Confirm</button>
+						</div>
+					</div>
+					<div class="page-search">
+						<input type="checkbox" id="page-switcher" hidden>
+						<input type="text" placeholder="Search CNN..." class="search-bar" id="search-here">
+						<label for="search-here" class="search-here">Search >></label>
+						<label for="page-switcher"><i class="fas fa-search"></i></label>
+					</div>
+					<div class="expanded-menu">
+						<input type="checkbox" id="hamburger-menu" hidden>
+						<label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+						<div class="mega-menu">
+							<div class="container">
+								<div class="row mr-5">
+									<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+										<div class="mt-4 mega-m-items">
+											<label class="" for="mega-item-switcher">Regions</label>
+											<ul>
+												<li><a href="#">U.S.</a></li>
+												<li><a href="#">Africa</a></li>
+												<li><a href="#">Americas</a></li>
+												<li><a href="#">Asia</a></li>
+												<li><a href="#">China</a></li>
+												<li><a href="#">Europe</a></li>
+												<li><a href="#">Middle East</a></li>
+												<li><a href="#">Opinion</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+										<div class="mt-4 mega-m-items">
+											<label class="" for="mega-item-switcher">U.S. Politics</label>
+											<ul>
+												<li><a href="#">45</a></li>
+												<li><a href="#">Congress</a></li>
+												<li><a href="#">Security</a></li>
+												<li><a href="#">The Nine</a></li>
+												<li><a href="#">Trumpmerica</a></li>
+												<li><a href="#">State</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+										<div class="mt-4 mega-m-items">
+											<label class="" for="mega-item-switcher">Money</label>
+											<ul>
+												<li><a href="#">Business</a></li>
+												<li><a href="#">Markets</a></li>
+												<li><a href="#">Tech</a></li>
+												<li><a href="#">Luxury</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+										<div class="mt-4 mega-m-items">
+											<label class="" for="mega-item-switcher">entertainment</label>
+											<ul>
+												<li><a href="#">Stars</a></li>
+												<li><a href="#">Screen</a></li>
+												<li><a href="#">Binge</a></li>
+												<li><a href="#">Culture</a></li>
+												<li><a href="#">Media</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+										<div class="mt-4 mega-m-items">
+											<label class="" for="mega-item-switcher">tech</label>
+											<ul>
+												<li><a href="#">Business</a></li>
+												<li><a href="#">Culture</a></li>
+												<li><a href="#">Gadgets</a></li>
+												<li><a href="#">Future</a></li>
+												<li><a href="#">Startups</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+										<div class="mt-4 mega-m-items">
+											<label class="" for="mega-item-switcher">Sport</label>
+											<ul>
+												<li><a href="#">Football</a></li>
+												<li><a href="#">Golf</a></li>
+												<li><a href="#">Tennis</a></li>
+												<li><a href="#">Motorsport</a></li>
+												<li><a href="#">Horseracing</a></li>
+												<li><a href="#">Equestrian</a></li>
+												<li><a href="#">Sailing</a></li>
+												<li><a href="#">Skiing</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								
+								<!-- 2nd row start -->
+								<div class="row mr-5">
+									<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+										<div class="mega-m-items">
+											<label class="" for="mega-item-switcher">Travel</label>
+											<ul>
+												<li><a href="#">Aviation</a></li>
+												<li><a href="#">Business Traveller</a></li>
+												<li><a href="#">Destinations</a></li>
+												<li><a href="#">Features</a></li>
+												<li><a href="#">Food/Drink</a></li>
+												<li><a href="#">Hotels</a></li>
+												<li><a href="#">Partner Hotels</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+										<div class="mega-m-items">
+											<label class="" for="mega-item-switcher">STYLE</label>
+											<ul>
+												<li><a href="#">Fashion</a></li>
+												<li><a href="#">Design</a></li>
+												<li><a href="#">Architecture</a></li>
+												<li><a href="#">Arts</a></li>
+												<li><a href="#">Autos</a></li>
+												<li><a href="#">Luxury</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+										<div class="mega-m-items">
+											<label class="" for="mega-item-switcher">Health</label>
+											<ul>
+												<li><a href="#">Diet + Fitness</a></li>
+												<li><a href="#">Living Well</a></li>
+												<li><a href="#">Parenting + Family</a></li>
+												<li><a href="#">Vital Signs</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+										<div class="mega-m-items">
+											<label class="" for="mega-item-switcher">Features</label>
+											<ul>
+												<li><a href="#">Freedom Project</a></li>
+												<li><a href="#">Impact Your World</a></li>
+												<li><a href="#">Inside Africa</a></li>
+												<li><a href="#">2 degrees</a></li>
+												<li><a href="#">All Features</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+										<div class="mega-m-items">
+											<label class="" for="mega-item-switcher">Video</label>
+											<ul>
+												<li><a href="#">Video news</a></li>
+												<li><a href="#">Feature shows</a></li>
+												<li><a href="#">HLN</a></li>
+												<li><a href="#">TV shows</a></li>
+												<li><a href="#">TV schedule</a></li>
+												<li><a href="#">Faces of CNN Worldwide</a></li>
+												<li><a href="#">CNNVR</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+										<div class="mega-m-items">
+											<label class="" for="mega-item-switcher">Sport</label>
+											<ul>
+												<li><a href="#">Football</a></li>
+												<li><a href="#">Golf</a></li>
+												<li><a href="#">Tennis</a></li>
+												<li><a href="#">Motorsport</a></li>
+												<li><a href="#">Horseracing</a></li>
+												<li><a href="#">Equestrian</a></li>
+												<li><a href="#">Sailing</a></li>
+												<li><a href="#">Skiing</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- 2nd row end -->
+								<div class="row mt-2">
+									<div class="mega-bottom">
+										<div class="bottom-left">
+											<div>
+												<img src="img/logo-us.png" alt="image" class="img">
+												<label for="">U.S.</label>
+											</div>
+											<div>
+												<img src="img/logo-esp.png" alt="image" class="img">
+												<label for="">Español</label>
+											</div>
+											<div class="b-left-last">
+												<img src="img/logo-ar.png" alt="image" class="img">
+												<label for="">Arabic</label>
+											</div>
+											
+										</div>
+										
+										
+										
+										<div class="bottom-right">
+											<p>Set edition preference:</p>
+											<div>
+												<input type="radio" id="U.S." name="country">
+												<label for="U.S.">U.S.</label>
+											</div>
+											<div>
+												<input type="radio" id="International" name="country">
+												<label for="International">International</label>
+											</div>
+											
+											<button type="button">Confirm</button>
+										</div>
+									</div>
+									
+									
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- header end here -->
+		<!-- main content start here -->
+		<main class="container">
+			<!-- main top area star here -->
+			<div class="row main-top-m">
+				<div class="col-lg-5 col-md-7 col-sm-10 col-10">
+					<div class="main-top-left">
+						<h1 class="text-center">Searching for a lifeline</h1>
+						<div class="main-top-content">
+							<div class="hight-lights">
+								<img class="" src="img/article-1.jpg" alt="">
+								<h4>UK election fallout</h4>
+							</div>
+							
+							<article class="text-left">
+								<h3 class="h6 font-weight-bold pt-2">Brit PM May has lost control of her party, Parliament, policy manifesto and Brexit</h3>
+								<p class="border-top h6 font-weight-normal pt-1">What UK election earthquake means for the world</p>
+								<p class="border-top h6 font-weight-normal pt-1">Where do UK Conservatives go from here?</p>
+							</article>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-5 col-sm-12 col-10 col-10">
+					<div class="main-top-middle">
+						<div class="row middle-top mb-5">
+							<img class="position-relative" src="img/article-2.jpg" alt="">
+							<p class="position-absolute">Engine part rips off passenger jet after take off</p>
+						</div>
+						<div class="row middle-top pt-5">
+							<img class="position-relative" src="img/article-3.jpg" alt="">
+							<p class="position-absolute">Trump crashes New Jersey wedding</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-10 col-10">
+					<div class="main-top-right ml-5">
+						<h2>Top stories</h2>
+						<img src="img/article-4.jpg" alt="">
+						<h3 class="">Macron on course for huge gains in French parliamentary elections</h3>
+						<ul>
+							<li><a href="#">Russia cloud settles in over Trump</a></li>
+							<li><a href="#">Puerto Rico votes to become 51st US state</a></li>
+							<li><a href="#">Arrests as South Korean military conducts 'gay witch-hunt'</a></li>
+							<li><a href="#">If there are Comey tapes, does Trump have to turn them over?</a></li>
+							<li><a href="#">Gulf crisis threatens to tear families apart</a></li>
+							<li><a href="#">Ex-US attorney opens up about Trump calls</a></li>
+						</ul>
+					</div>
+				</div>
+			
+			<!-- main top area end here -->
+			<!-- central area star here -->
+			
+				<div class="col-lg-4 col-md-5 col-sm-10 col-10">
+					<div class="cl-content">
+						<div class="card border-0">
+							<h2 class="card-header border-0 p-2 h6">Around the world</h2>
+							<img class="card-img-top w-100" src="img/article-5.jpg" alt="">
+							<div class="card-body p-0">
+								<h3 class="card-title h5 mt-2 font-weight-normal">Rafael Nadal makes history at French Open</h3>
+								<article>
+									<ul>
+										<li><a href="#">Russia cloud settles in over Trump</a></li>
+										<li><a href="#">Puerto Rico votes to become 51st US state</a></li>
+										<li><a href="#">Arrests as South Korean military conducts 'gay witch-hunt'</a></li>
+										<li><a href="#">If there are Comey tapes, does Trump have to turn them over?</a></li>
+										<li><a href="#">Gulf crisis threatens to tear families apart</a></li>
+										<li><a href="#">Ex-US attorney opens up about Trump calls</a></li>
+									</ul>
+								</article>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-lg-5 col-md-7 col-sm-10 col-10">
+					<div class="cm-content">
+						<div class="card border-0">
+							<div class="card-body p-0">
+								<h2 class="card-header border-0 p-2 h6">Featured</h2>
+								<div class="middle-img-content">
+									<img src="img/article-6.jpg" alt="">
+									<h4>ONE YEAR ON</h4>
+								</div>
+								<h3 class="card-title">How Pulse massacre pushed some back into the closet</h3>
+								<div class="middle-bottom">
+									<img src="img/article-7.jpg" alt="">
+									<p>Wealth obsession gone too far?</p>
+								</div>
+								<div class="middle-bottom">
+									<img src="img/article-8.jpg" alt="">
+									<p>Why these are 'meals rejected by everyone'</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-lg-3 col-md-5 col-sm-10 col-10">
+					<div class="cr-content">
+						<div class="card border-0">
+							<h2 class="card-header card-header border-0 p-2 h6">Spotlight</h2>
+							<div class="card-body p-0">
+								<div class="cr-items">
+									<img src="img/article-9.jpg" alt="">
+									<p>Sharapova pulls out of Wimbledon qualifying</p>
+								</div>
+								<div class="cr-items border-top">
+									<img src="img/article-10.jpg" alt="">
+									<p>Why there are 47 Lebanons in the US</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			
+			</div>
+			<!-- central area end here -->
+			<!-- central middle area star here -->
+			<div class="row mt-3">
+				<div class="col-lg-4 col-md-5 col-sm-10 col-10">
+					<div class="cm-left">
+						<div class="card border-0">
+							<h2 class="card-header border-0 p-2 h6">Take a closer look</h2>
+							<div class="card-body p-0">
+								<div class="cml-card-content">
+									<img class="card-img-top w-100" src="img/article-11.jpg" alt="">
+									<h3 class="card-title h5 pt-2 pb-3 font-weight-normal">'Wonder Woman' soars, 'The Mummy' staggers</h3>
+								</div>
+								
+								<div class="cm-left-content">
+									<div class="cml-items border-top mb-1 w-100">
+										<img class="" src="img/article-12.jpg" alt="">
+										<p class="h6 font-weight-normal">Hamilton gets sixth Canadian Grand Prix win</p>
+									</div>
+									<div class="cml-items border-top mb-1">
+										<img class="" src="img/article-13.jpg" alt="">
+										<p class="h6 font-weight-normal">Orlando's new 'culture of compassion'</p>
+									</div>
+									<div class="cml-items border-top mb-1">
+										<img class="" src="img/article-14.jpg" alt="">
+										<p class="h6 font-weight-normal">Want to be happy and successful? Try compassion</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-lg-5 col-md-7 col-sm-10 col-10">
+					<div class="cm-middle">
+						<div class="card border-0">
+							<div class="card-body p-0">
+								<div class="cm-top">
+									<img class="card-img-top w-100" src="img/article-15.jpg" alt="">
+									<h4 class="font-weight-light h2 pt-2 pl-3 pb-2">Who were the big winners at the Tony Awards?</h4>
+								</div>
+								<div class="cm-bottom">
+									<div class="cmm-b-content mt-1">
+										<img class="card-img-left" src="img/article-16.jpg" alt="">
+										<p class="h4 font-weight-normal">Exploring Hong Kong's greenest island</p>
+									</div>
+									<div class="cmm-b-content mt-1 border-top">
+										<img class="card-img-left" src="img/article-17.jpg" alt="">
+										<p class="h4 font-weight-normal">Exploring Hong Kong's greenest island</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-lg-3 col-md-5 col-sm-10 col-10">
+					<div class="cm-right">
+						<div class="card border-0">
+							<h2 class="card-header border-0 p-2 h6">Opinion</h2>
+							<div class="card-body p-0">
+								<img class="card-img-top w-100" src="img/article-18.jpg" alt="">
+								<h3 class="card-title h5 mt-2 mb-4"><strong>David A. Andelman:</strong> Macron, the strongman Europe needs</h3>
+								<div class="cmr-bottom">
+									<div class="cmr-bottom-content mt-1">
+										<img class="card-img-left" src="img/article-19.jpg" alt="">
+										<p class="h6 font-weight-normal"><strong>Oma Seddiq:</strong> My life as a student in Qatar</p>
+									</div>
+									<div class="cmr-bottom-content border-top mt-1">
+										<img class="card-img-left" src="img/article-20.jpg" alt="">
+										<p class="h6 font-weight-normal"><strong>Laura Beers:</strong>Laura Beers: History says Theresa May must go</p>
+									</div>
+									<div class="cmr-bottom-content border-top mt-3">
+										<img class="card-img-left" src="img/article-21.jpg" alt="">
+										<p class="h6 font-weight-normal"><strong>James Bloodworth:</strong> Rise of the left-wing shakes UK politics</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!-- central middle area end here -->
+			<!-- main featured solution start here -->
+			<div class="featured-solution">
+				<div class="featured-header">
+					<h2>Featured Sections</h2>
+					<span class=""></span>
+					<span class="margin"></span>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-10 col-10">
+						<div class="mb-left">
+							<div class="card border-0">
+								<h2 class="card-header border-0 p-2 h6">Sport</h2>
+								<div class="card-body p-0">
+									<img class="w-100" src="img/article-22.jpg" alt="">
+									<h3 class="card-title h5 pt-2 font-weight-normal">What happens in the 21 hours when soccer stars aren't training</h3>
+									<article>
+										<ul>
+											<li class="border-top"><a href="#">Russia cloud settles in over Trump</a></li>
+											<li class="border-top"><a href="#">Puerto Rico votes to become 51st US state</a></li>
+											<li class="border-top"><a href="#">Arrests as South Korean military conducts 'gay witch-hunt'</a></li>
+											<li class="border-top"><a href="#">If there are Comey tapes, does Trump have to turn them over?</a></li>
+											<li class="border-top"><a href="#">Gulf crisis threatens to tear families apart</a></li>
+											<li class="border-top"><a href="#">Ex-US attorney opens up about Trump calls</a></li>
+										</ul>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-10 col-10">
+						<div class="mb-left">
+							<div class="card border-0">
+								<h2 class="card-header border-0 p-2 h6">Travel</h2>
+								<div class="card-body p-0">
+									<img class="w-100" src="img/article-23.jpg" alt="">
+									<h3 class="card-title h5 pt-2 font-weight-normal">A volcano on an island within a lake within an island</h3>
+									<article>
+										<ul>
+											<li class="border-top"><a href="#">Russia cloud settles in over Trump</a></li>
+											<li class="border-top"><a href="#">Puerto Rico votes to become 51st US state</a></li>
+											<li class="border-top"><a href="#">Arrests as South Korean military conducts 'gay witch-hunt'</a></li>
+											<li class="border-top"><a href="#">If there are Comey tapes, does Trump have to turn them over?</a></li>
+											<li class="border-top"><a href="#">Gulf crisis threatens to tear families apart</a></li>
+											<li class="border-top"><a href="#">Ex-US attorney opens up about Trump calls</a></li>
+										</ul>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-10 col-10">
+						<div class="mb-left">
+							<div class="card border-0">
+								<h2 class="card-header border-0 p-2 h6">Style</h2>
+								<div class="card-body p-0">
+									<img class="w-100" src="img/article-24.jpg" alt="">
+									<h3 class="card-title h5 pt-2 font-weight-normal">Incredible photos show the world as you've never seen it</h3>
+									<article>
+										<ul>
+											<li class="border-top"><a href="#">Russia cloud settles in over Trump</a></li>
+											<li class="border-top"><a href="#">Puerto Rico votes to become 51st US state</a></li>
+											<li class="border-top"><a href="#">Arrests as South Korean military conducts 'gay witch-hunt'</a></li>
+											<li class="border-top"><a href="#">If there are Comey tapes, does Trump have to turn them over?</a></li>
+											<li class="border-top"><a href="#">Gulf crisis threatens to tear families apart</a></li>
+											<li class="border-top"><a href="#">Ex-US attorney opens up about Trump calls</a></li>
+										</ul>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- main featured solution->bottom start here -->
+					
+					<div class="col-lg-4 col-md-6 col-sm-10 col-10">
+						<div class="mb-left">
+							<div class="card border-0">
+								<h2 class="card-header border-0 p-2 h6">CNN Money</h2>
+								<div class="card-body p-0">
+									<img class="w-100" src="img/article-25.jpg" alt="">
+									<h3 class="card-title h5 pt-2 font-weight-normal">Trump is hurting American tourism</h3>
+									<article>
+										<ul>
+											<li class="border-top"><a href="#">Russia cloud settles in over Trump</a></li>
+											<li class="border-top"><a href="#">Puerto Rico votes to become 51st US state</a></li>
+											<li class="border-top"><a href="#">Arrests as South Korean military conducts 'gay witch-hunt'</a></li>
+											<li class="border-top"><a href="#">If there are Comey tapes, does Trump have to turn them over?</a></li>
+											<li class="border-top"><a href="#">Gulf crisis threatens to tear families apart</a></li>
+											<li class="border-top"><a href="#">Ex-US attorney opens up about Trump calls</a></li>
+										</ul>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-10 col-10">
+						<div class="mb-left">
+							<div class="card border-0">
+								<h2 class="card-header border-0 p-2 h6">Health</h2>
+								<div class="card-body p-0">
+									<img class="w-100" src="img/article-26.jpg" alt="">
+									<h3 class="card-title h5 pt-2 font-weight-normal">Fruits and veggies that could poison you</h3>
+									<article>
+										<ul>
+											<li class="border-top"><a href="#">Russia cloud settles in over Trump</a></li>
+											<li class="border-top"><a href="#">Puerto Rico votes to become 51st US state</a></li>
+											<li class="border-top"><a href="#">Arrests as South Korean military conducts 'gay witch-hunt'</a></li>
+											<li class="border-top"><a href="#">If there are Comey tapes, does Trump have to turn them over?</a></li>
+											<li class="border-top"><a href="#">Gulf crisis threatens to tear families apart</a></li>
+											<li class="border-top"><a href="#">Ex-US attorney opens up about Trump calls</a></li>
+										</ul>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<!-- main featured solution->bottom end here -->
+			</div>
+			
+			
+			<!-- main featured solution end here -->
+		</main>
+		<!-- main content end here -->
+		<!-- footer star here -->
+		<footer class="main-footer">
+			<div class="container">
+				<div class="f-header">
+					<h2>In Case You Missed It</h2>
+					<span class=""></span>
+					<span class="margin"></span>
+				</div>
+				<div class="row mt-3">
+					<div class="f-top-content col-lg-9 col-md-8">
+						<img class="w-100 position-relative" src="img/article-27.jpg" alt="">
+						<div class="f-hightlight-area">
+							
+							<h4 class="bg-white text-danger p-3 position-absolute">CNN EXCLUSIVE</h4>
+							<h3 class=" position-absolute">Harrowing video shows Syria's war on its own children</h3>
+						</div>
+					</div>
+					<div class="f-right-content col-lg-3 col-md-4">
+						<div class="fr-item">
+							<img class="w-100" src="img/article-28.jpg" alt="">
+							<p class="text-white h5 pb-3 pt-2">Which European leader are you?</p>
+						</div>
+						<div class="fr-item">
+							<img class="w-100" src="img/article-29.jpg" alt="">
+							<p class="text-white h5 pb-3 pt-2">Venezuela: How paradise got lost</p>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-3 pb-3">
+					<div class="col-lg-6 col-md-6">
+						<div class="fm-left d-flex justify-content-start">
+							<p class="text-white mt-2 h6">London, United Kingdom</p>
+							<img class="pl-3" src="img/weather-icon.png" alt="">
+							<p><sub style="color: #fff; font-size: 17px;">16°</sub></p>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-5">
+						<div class="fm-rignt d-flex justify-content-end">
+							<input class="positon-relative" type="text" id="" placeholder="Search CNN...">
+							<a href="#" class="btn position-absolute"><i class="fas fa-search"></i></a>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="f-f-bottom">
+					<div class="">
+						<div class="row mr-5">
+							<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+								<div class="mt-4 mega-m-items">
+									<label class="" for="mega-item-switcher">Regions</label>
+									<ul>
+										<li><a href="#">U.S.</a></li>
+										<li><a href="#">Africa</a></li>
+										<li><a href="#">Americas</a></li>
+										<li><a href="#">Asia</a></li>
+										<li><a href="#">China</a></li>
+										<li><a href="#">Europe</a></li>
+										<li><a href="#">Middle East</a></li>
+										<li><a href="#">Opinion</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+								<div class="mt-4 mega-m-items">
+									<label class="" for="mega-item-switcher">U.S. Politics</label>
+									<ul>
+										<li><a href="#">45</a></li>
+										<li><a href="#">Congress</a></li>
+										<li><a href="#">Security</a></li>
+										<li><a href="#">The Nine</a></li>
+										<li><a href="#">Trumpmerica</a></li>
+										<li><a href="#">State</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+								<div class="mt-4 mega-m-items">
+									<label class="" for="mega-item-switcher">Money</label>
+									<ul>
+										<li><a href="#">Business</a></li>
+										<li><a href="#">Markets</a></li>
+										<li><a href="#">Tech</a></li>
+										<li><a href="#">Luxury</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+								<div class="mt-4 mega-m-items">
+									<label class="" for="mega-item-switcher">entertainment</label>
+									<ul>
+										<li><a href="#">Stars</a></li>
+										<li><a href="#">Screen</a></li>
+										<li><a href="#">Binge</a></li>
+										<li><a href="#">Culture</a></li>
+										<li><a href="#">Media</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+								<div class="mt-4 mega-m-items">
+									<label class="" for="mega-item-switcher">tech</label>
+									<ul>
+										<li><a href="#">Business</a></li>
+										<li><a href="#">Culture</a></li>
+										<li><a href="#">Gadgets</a></li>
+										<li><a href="#">Future</a></li>
+										<li><a href="#">Startups</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+								<div class="mt-4 mega-m-items">
+									<label class="" for="mega-item-switcher">Sport</label>
+									<ul>
+										<li><a href="#">Football</a></li>
+										<li><a href="#">Golf</a></li>
+										<li><a href="#">Tennis</a></li>
+										<li><a href="#">Motorsport</a></li>
+										<li><a href="#">Horseracing</a></li>
+										<li><a href="#">Equestrian</a></li>
+										<li><a href="#">Sailing</a></li>
+										<li><a href="#">Skiing</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<!-- 2nd row start -->
+						<div class="row mr-5">
+							<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+								<div class="mega-m-items">
+									<label class="" for="mega-item-switcher">Travel</label>
+									<ul>
+										<li><a href="#">Aviation</a></li>
+										<li><a href="#">Business Traveller</a></li>
+										<li><a href="#">Destinations</a></li>
+										<li><a href="#">Features</a></li>
+										<li><a href="#">Food/Drink</a></li>
+										<li><a href="#">Hotels</a></li>
+										<li><a href="#">Partner Hotels</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+								<div class="mega-m-items">
+									<label class="" for="mega-item-switcher">STYLE</label>
+									<ul>
+										<li><a href="#">Fashion</a></li>
+										<li><a href="#">Design</a></li>
+										<li><a href="#">Architecture</a></li>
+										<li><a href="#">Arts</a></li>
+										<li><a href="#">Autos</a></li>
+										<li><a href="#">Luxury</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+								<div class="mega-m-items">
+									<label class="" for="mega-item-switcher">Health</label>
+									<ul>
+										<li><a href="#">Diet + Fitness</a></li>
+										<li><a href="#">Living Well</a></li>
+										<li><a href="#">Parenting + Family</a></li>
+										<li><a href="#">Vital Signs</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+								<div class="mega-m-items">
+									<label class="" for="mega-item-switcher">Features</label>
+									<ul>
+										<li><a href="#">Freedom Project</a></li>
+										<li><a href="#">Impact Your World</a></li>
+										<li><a href="#">Inside Africa</a></li>
+										<li><a href="#">2 degrees</a></li>
+										<li><a href="#">All Features</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+								<div class="mega-m-items">
+									<label class="" for="mega-item-switcher">Video</label>
+									<ul>
+										<li><a href="#">Video news</a></li>
+										<li><a href="#">Feature shows</a></li>
+										<li><a href="#">HLN</a></li>
+										<li><a href="#">TV shows</a></li>
+										<li><a href="#">TV schedule</a></li>
+										<li><a href="#">Faces of CNN Worldwide</a></li>
+										<li><a href="#">CNNVR</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-6 col-12 offset-lg-0 offset-md-1 offset-sm-0 col-1   mega-items">
+								<div class="mega-m-items">
+									<label class="" for="mega-item-switcher">Sport</label>
+									<ul>
+										<li><a href="#">Football</a></li>
+										<li><a href="#">Golf</a></li>
+										<li><a href="#">Tennis</a></li>
+										<li><a href="#">Motorsport</a></li>
+										<li><a href="#">Horseracing</a></li>
+										<li><a href="#">Equestrian</a></li>
+										<li><a href="#">Sailing</a></li>
+										<li><a href="#">Skiing</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</footer>
+		
+		
+	</div>
+	<!-- footer end here -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
